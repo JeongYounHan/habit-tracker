@@ -54,10 +54,12 @@ class Habits extends Component {
   render() {
     return (
       <main>
-        <div>
-          <input placeholder="Habit" onChange={this.handleInput} value={this.state.inputValue}></input>
-          <button onClick={this.habitAdd}>Add</button>
-        </div>
+        <form className="add-form">
+          <input className="add-input" placeholder="Habit" onChange={this.handleInput} value={this.state.inputValue}></input>
+          <button className="add-button" onClick={this.habitAdd}>
+            Add
+          </button>
+        </form>
 
         <ul>
           {this.state.habits.map((habit) => (
