@@ -56,7 +56,7 @@ class Habits extends Component {
       <main>
         <form className="add-form">
           <input className="add-input" placeholder="Habit" onChange={this.handleInput} value={this.state.inputValue}></input>
-          <button className="add-button" onClick={this.habitAdd}>
+          <button className="add-button" type="button" onClick={this.habitAdd}>
             Add
           </button>
         </form>
