@@ -1,6 +1,10 @@
-# React
+# Habit Tracker
 
-## 개요
+배포 url: https://hhhjy-habit-tracker.netlify.app/
+
+
+
+## React 개요
 
 1. mvc 패턴 중에서 View 부분을 담당하고 있음
 
@@ -37,7 +41,7 @@ yarn eject : 포장 패키지 안에 뭐있는지 다 꺼내서 확인 가능, �
 
 
 
-## 개념
+## React 개념
 
 ### 클래스 vs 함수 컴포넌트
 
@@ -224,7 +228,7 @@ build파일 만들어주고
 
 netlify deploy 명령어 실행으로 간단하게 만들 수 있음
 
-임시 배포 url: https://621735a61621a87008d5dd2d--hhhjy-habit-tracker.netlify.app
+netlify deploy --prod
 
 ```
 Site Created
