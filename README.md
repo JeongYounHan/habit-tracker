@@ -16,7 +16,7 @@
 
    - 상위 컴포넌트에서 변화가 생겼다고 그 밑 컴포넌트가 전부 다시 재 render 되는 것이 아님, virtual dom tree 와의 비교 후 변경 
 - 따라서 render 함수가 많이 호출되어도 실제로 보여지는 데이터가 변동 되지 않으면 돔트리에 영향 주지 않음(이것땜에 각 컴포넌트에 console.log 심어놓으면 데이터 변할때마다 계속 출력돼)
-   
+  
    
 
 ### 툴 설명
@@ -217,3 +217,42 @@ https://reactjs.org/docs/state-and-lifecycle.html
    ```
 
    
+
+### Netlify
+
+build파일 만들어주고
+
+netlify deploy 명령어 실행으로 간단하게 만들 수 있음
+
+임시 배포 url: https://621735a61621a87008d5dd2d--hhhjy-habit-tracker.netlify.app
+
+```
+Site Created
+
+Admin URL: https://app.netlify.com/sites/hhhjy-habit-tracker  
+URL:       https://hhhjy-habit-tracker.netlify.app
+Site ID:   7c0bcdc4-915d-415a-a86c-47286851d1c2
+
+
+Adding local .netlify folder to .gitignore file...
+Linked to hhhjy-habit-tracker in C:\Users\hjy\Documents\0.정리
+\react-projects\habit-tracker\.netlify\state.json
+Please provide a publish directory (e.g. "public" or "dist" or "."):
+C:\Users\hjy\Documents\0.정리\react-projects\habit-tracker
+? Publish directory C:\Users\hjy\Documents\0.정리\react-projects
+\habit-tracker\build
+Deploy path: C:\Users\hjy\Documents\0.정리\react-projects\habit-tracker\build
+Deploying to draft URL...
+✔ Finished hashing 8 files
+✔ CDN requesting 6 files
+✔ Finished uploading 6 assets
+✔ Deploy is live!
+
+Logs:              https://app.netlify.com/sites/hhhjy-habit-tracker/deploys/621735a61621a87008d5dd2d
+Website Draft URL: https://621735a61621a87008d5dd2d--hhhjy-habit-tracker.netlify.app
+
+If everything looks good on your draft URL, deploy it to your 
+main site URL with the --prod flag.
+netlify deploy --prod
+```
+
