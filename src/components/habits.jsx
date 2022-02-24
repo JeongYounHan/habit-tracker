@@ -28,7 +28,7 @@ class Habits extends Component {
   handleDecrement = (habit) => {
     const habits = this.state.habits.map((item) => {
       if (item.id === habit.id) {
-        return { ...habit, count: habit.count - 1 };
+        return { ...habit, count: habit.count > 0 ? habit.count - 1 : 0 };
       }
       return item;
     });
